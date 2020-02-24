@@ -15,6 +15,8 @@ opt = docopt(__doc__)
 
 def main(number):
   number = int(number)
+  if number < 0:
+    raise Exception("n should not a positive number")
   print(math.sqrt(number))
     
 
